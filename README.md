@@ -35,7 +35,7 @@
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="20"/> Windows
     </td>
     <td>
-      <a href="https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-Setup-1.0.0.exe">Download .exe</a>
+      <a href="https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield%20Setup%201.0.0.exe">Download .exe</a>
     </td>
   </tr>
   <tr>
@@ -43,7 +43,7 @@
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="20"/> Linux
     </td>
     <td>
-      <a href="https://github.com/atishay563/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.AppImage">Download .AppImage</a>
+      <a href="https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.AppImage">Download .AppImage</a>
     </td>
   </tr>
 </table>
