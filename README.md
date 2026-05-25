@@ -1,0 +1,79 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Electron.svg" width="80" alt="Electron Logo" />
+  
+  # 🛡️ KeyShield
+  
+  **A beautiful, premium cross-platform utility that safely disables your keyboard so you can clean it without accidental clicks.**
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgray.svg)]()
+  [![Built with Electron](https://img.shields.io/badge/Built%20with-Electron-47848f.svg)](https://www.electronjs.org/)
+
+  [Features](#sparkles-features) • [Installation](#inbox_tray-installation) • [Usage](#computer-usage) • [Contributing](#handshake-contributing)
+</div>
+
+---
+
+## :sparkles: Features & Capabilities
+
+KeyShield provides a robust suite of features designed to make keyboard maintenance effortless and beautiful.
+
+| Feature | Description | Icon |
+| :--- | :--- | :---: |
+| **Smart Lock** | Instantly disables keyboard input system-wide by intercepting keypresses using Electron global shortcuts. | 🔒 |
+| **Timed Unlock** | Automatically unlocks your keyboard after a set duration (30s, 1m, 2m, or 5m). | ⏱️ |
+| **Mouse-Active** | Keeps your mouse active so you can manually click the "Unlock" button at any time in case of emergency. | 🖱️ |
+| **Premium UI** | Features a highly polished, luxurious dark-glass UI with subtle champagne/gold accents and smooth animations. | 💎 |
+| **Cross-Platform** | Engineered to work flawlessly on all major operating systems. | 🌍 |
+
+---
+
+## :desktop_computer: Platform Support
+
+| Operating System | Status | Compatibility Notes |
+| :--- | :---: | :--- |
+| <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Apple-Dark.svg" width="20" /> **macOS** | ✅ | Full support. Intercepts all standard keypresses. |
+| <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Windows-Dark.svg" width="20" /> **Windows** | ✅ | Full support. (System-level sequences like `Ctrl+Alt+Del` remain active for safety). |
+| <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Linux-Dark.svg" width="20" /> **Linux** | ✅ | Full support across standard desktop environments (GNOME, KDE). |
+
+---
+
+## :inbox_tray: Installation
+
+Since KeyShield is a Node.js/Electron application, you can easily download and run it directly from the source code.
+
+| Step | Action | Command |
+| :---: | :--- | :--- |
+| **1** | **Clone the repository** | `git clone https://github.com/yourusername/keyshield.git` |
+| **2** | **Navigate to folder** | `cd keyshield` |
+| **3** | **Install packages** | `npm install` |
+| **4** | **Launch App** | `npm start` |
+
+---
+
+## :computer: Usage Instructions
+
+1. Open **KeyShield**.
+2. Select your desired cleaning time from the options panel.
+3. Click the **Lock Keyboard** button.
+4. Your screen will display a premium lock overlay. **You can now safely wipe down and clean your keyboard!**
+5. Once you are finished, either wait for the timer to run out, or simply use your mouse to click **Click to Unlock**.
+
+---
+
+## :handshake: Contributing
+
+Contributions, issues, and feature requests are welcome! 
+
+| Phase | Description | Status |
+| :--- | :--- | :---: |
+| **Phase 1** | Kiosk-mode overlay and Global Shortcut swallowing (Current implementation). | 🟢 |
+| **Phase 2** | Native C++ hooks (`node-gyp`) for absolute OS-level key blocking. | 🟡 |
+| **Packaging** | Compiling binary executables (`.exe`, `.dmg`, `.AppImage`) using Electron Forge. | 🟡 |
+
+If you'd like to help build Phase 2 or package the app into executables, please open a Pull Request!
+
+<div align="center">
+  <br/>
+  Made with ❤️ for clean keyboards everywhere.
+</div>
