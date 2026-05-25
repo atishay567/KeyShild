@@ -75,5 +75,5 @@ If you'd like to help build Phase 2 or package the app into executables, please 
 
 <div align="center">
   <br/>
-  Made with ❤️ for clean keyboards everywhere.
+  Made by Atishay.
 </div>
