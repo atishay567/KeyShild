@@ -18,7 +18,7 @@
 
 | Platform | Link |
 |----------|------|
-|  Mac — Apple Silicon (M1/M2/M3) | [Download .dmg](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0-arm64.dmg) |
+|  **macOS:** Mac — Apple Silicon (M1/M2/M3) | [Download .dmg](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0-arm64.dmg) |
 |  Mac — Intel | [Download .dmg](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.dmg) |
 | ⊞ Windows | [Download .exe](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-Setup-1.0.0.exe) |
 | 🐧 Linux | [Download .AppImage](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.AppImage) |
