@@ -14,7 +14,7 @@
 
 ---
 
-## ⬇️ Download
+## :inbox_tray: Download
 
 | Platform | Link |
 |----------|------|
