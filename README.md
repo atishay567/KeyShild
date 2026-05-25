@@ -16,12 +16,37 @@
 
 ## ⬇️ Download
 
-| Platform | Link |
-|----------|------|
-|  Mac — Apple Silicon (M1/M2/M3) | [Download .dmg](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0-arm64.dmg) |
-|  Mac — Intel | [Download .dmg](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.dmg) |
-| ⊞ Windows | [Download .exe](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-Setup-1.0.0.exe) |
-| 🐧 Linux | [Download .AppImage](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.AppImage) |
+<table>
+  <tr>
+    <th>Operating System</th>
+    <th>Download</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="20"/> macOS
+    </td>
+    <td>
+      <a href="https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0-arm64.dmg">Apple Silicon (M1/M2/M3)</a> · 
+      <a href="https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.dmg">Intel</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="20"/> Windows
+    </td>
+    <td>
+      <a href="https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-Setup-1.0.0.exe">Download .exe</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="20"/> Linux
+    </td>
+    <td>
+      <a href="https://github.com/atishay563/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.AppImage">Download .AppImage</a>
+    </td>
+  </tr>
+</table>
 
 > ### ⚠️ Mac Troubleshooting
 > **"App is damaged and can't be opened" error:**
