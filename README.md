@@ -44,10 +44,26 @@ Since KeyShield is a Node.js/Electron application, you can easily download and r
 
 | Step | Action | Command |
 | :---: | :--- | :--- |
-| **1** | **Clone the repository** | `git clone https://github.com/yourusername/keyshield.git` |
-| **2** | **Navigate to folder** | `cd keyshield` |
+| **1** | **Clone the repository** | `git clone https://github.com/atishay567/KeyShild.git` |
+| **2** | **Navigate to folder** | `cd KeyShild` |
 | **3** | **Install packages** | `npm install` |
 | **4** | **Launch App** | `npm start` |
+
+---
+
+## 📦 Packaging (Build Standalone Executable)
+
+If you want to deploy/install KeyShield permanently on your system as a standalone application (so you don't need to run it from a terminal anymore), you can package it:
+
+```bash
+# Build the application package for your current platform
+npm run dist
+```
+
+This will generate standard standalone application packages in the `dist/` directory:
+- **macOS:** Creates `KeyShield.app` and a `.dmg` installer.
+- **Windows:** Creates a `.exe` installer.
+- **Linux:** Creates a `.AppImage` standalone binary.
 
 ---
 
@@ -69,9 +85,9 @@ Contributions, issues, and feature requests are welcome!
 | :--- | :--- | :---: |
 | **Phase 1** | Kiosk-mode overlay and Global Shortcut swallowing (Current implementation). | 🟢 |
 | **Phase 2** | Native C++ hooks (`node-gyp`) for absolute OS-level key blocking. | 🟡 |
-| **Packaging** | Compiling binary executables (`.exe`, `.dmg`, `.AppImage`) using Electron Forge. | 🟡 |
+| **Packaging** | Compiling binary executables (`.exe`, `.dmg`, `.AppImage`) using `electron-builder`. | 🟢 |
 
-If you'd like to help build Phase 2 or package the app into executables, please open a Pull Request!
+If you'd like to help build Phase 2, please open a Pull Request!
 
 <div align="center">
   <br/>
