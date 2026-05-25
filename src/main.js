@@ -1,9 +1,10 @@
-const { app, BrowserWindow, globalShortcut, ipcMain, screen } = require('electron');
+const { app, BrowserWindow, globalShortcut, ipcMain, screen, powerSaveBlocker } = require('electron');
 const path = require('node:path');
 
 let mainWindow;
 let isLocked = false;
 let lockTimeout;
+let powerBlockerId = null;
 
 const ALL_KEYS = [
   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
@@ -11,6 +12,8 @@ const ALL_KEYS = [
   '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
   'Space', 'Enter', 'Escape', 'Backspace', 'Tab',
   'Up', 'Down', 'Left', 'Right',
+  'Home', 'End', 'PageUp', 'PageDown', 'Insert', 'Delete',
+  'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12',
   'VolumeUp', 'VolumeDown', 'VolumeMute',
   'MediaNextTrack', 'MediaPreviousTrack', 'MediaStop', 'MediaPlayPause',
   '`', '-', '=', '[', ']', '\\', ';', '\'', ',', '.', '/'
@@ -86,6 +89,10 @@ ipcMain.handle('lock-keyboard', (event, durationMs) => {
     }, durationMs);
   }
   
+  if (powerBlockerId === null) {
+    powerBlockerId = powerSaveBlocker.start('prevent-display-sleep');
+  }
+
   return true;
 });
 
@@ -96,6 +103,11 @@ function unlockKeyboard() {
   if (lockTimeout) {
     clearTimeout(lockTimeout);
     lockTimeout = null;
+  }
+
+  if (powerBlockerId !== null && powerSaveBlocker.isStarted(powerBlockerId)) {
+    powerSaveBlocker.stop(powerBlockerId);
+    powerBlockerId = null;
   }
 
   unregisterLockShortcuts();
