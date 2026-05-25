@@ -23,7 +23,15 @@
 | ⊞ Windows | [Download .exe](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-Setup-1.0.0.exe) |
 | 🐧 Linux | [Download .AppImage](https://github.com/atishay567/KeyShild/releases/download/v1.0.0/KeyShield-1.0.0.AppImage) |
 
-> ⚠️ Mac users: If you see a security warning, right-click the app → Open → Open anyway.
+> ### ⚠️ Mac Troubleshooting
+> **"App is damaged and can't be opened" error:**
+> macOS adds a quarantine flag to unsigned downloaded apps. To fix this, open your Terminal and run the following command after moving the app to your Applications folder:
+> ```bash
+> xattr -cr /Applications/KeyShield.app
+> ```
+> 
+> **"Developer cannot be verified" warning:**
+> Right-click the app → Open → Open anyway.
 
 ---
 
